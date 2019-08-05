@@ -1,0 +1,13 @@
+.slick-prev {
+  vertical-align: center;
+  left: 3% !important;
+  z-index: 1;
+}
+.slick-next {
+  vertical-align: center;
+
+  right: 3% !important;
+  z-index: 1;
+}
+.slick-dots {
+}
