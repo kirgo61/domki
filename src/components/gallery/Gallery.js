@@ -15,7 +15,7 @@ import photo11 from "../utilities/domkiZdjecia1/11.JPG";
 
 import photo13 from "../utilities/domkiZdjecia1/13.JPG";
 import photo14 from "../utilities/domkiZdjecia1/14.JPG";
-import photo15 from "../utilities/domkiZdjecia1/15.JPG";
+
 import photo16 from "../utilities/domkiZdjecia1/16.JPG";
 
 const Gallery = () => {
@@ -32,11 +32,11 @@ const Gallery = () => {
     photo11,
     photo13,
     photo14,
-    photo15,
+
     photo16
   ];
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     autoplay: false,
@@ -50,18 +50,21 @@ const Gallery = () => {
     <div
       style={{
         overflow: "hidden",
-        width: "80vw",
-        height: "70vh",
+
         margin: "auto"
       }}
     >
       <Slider {...settings}>
         {photos.map(photo => (
-          <div style={{ width: "90%", height: "80%" }}>
+          <div style={{ width: "90vw", height: "80vh" }}>
             <div>
               <img
                 src={photo}
-                style={{ width: "80vw", height: "70vh" }}
+                style={{
+                  width: "100vw",
+                  height: "80vh",
+                  objectFit: "cover"
+                }}
                 alt=""
               />
             </div>

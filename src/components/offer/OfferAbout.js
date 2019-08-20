@@ -7,8 +7,8 @@ import Fade from "react-reveal/Fade";
 const OfferAbout = () => {
   return (
     <section>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <div style={{ padding: "2rem", width: "30vw" }}>
+      <div className="offerAbout">
+        <div className="offerAboutInnerDiv">
           <Fade left>
             <h3 className="offerTitleSmall">O nas</h3>
             <p className="offerText">
@@ -25,11 +25,13 @@ const OfferAbout = () => {
           </Fade>
           <Fade top>
             <div style={{ textAlign: "center", paddingTop: "1rem" }}>
-              <button className="offerTextButton">Atrakcje</button>
+              <a href="https://www.google.pl/destination/map/topsights?client=opera&hs=Qri&ei=8LtbXc_nCMHHwQLZgamQBQ&q=google+atrakcje+komancza&oq=google+atrakcje+komancza&gs_l=psy-ab.3...1607.3317..3563...0.2..0.131.1006.1j8......0....1..gws-wiz.......0i71j0j0i22i30j33i160.0NeeMe1IrmY&uact=5&tcfs=&dest_src=ts&dest_mid=/m/027nk14&sa=X&ved=2ahUKEwidsdKFkJHkAhXPYVAKHfJrDdkQ6tEBKAQwAHoECAsQBw#dest_mid=/m/027nk14&dest_src=ts&tcfs=EhcKCi9tLzAyN25rMTQSCUtvbWHFhGN6YQ&trifp=skpm%3D/m/0q3xydd%26t%3De">
+                <button className="offerTextButton">Atrakcje</button>
+              </a>
             </div>
           </Fade>
         </div>
-        <div style={{ padding: "2rem", width: "30vw" }}>
+        <div className="offerAboutInnerDiv">
           <Fade right>
             <FontAwesomeIcon
               icon={faQuoteRight}

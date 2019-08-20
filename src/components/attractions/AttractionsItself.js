@@ -10,38 +10,48 @@ const AttractionsItself = () => {
   return (
     <div className="attractions">
       <div className="attractionsWrapper">
-        <div className="attractionsItem">
-          <h3>Góry</h3>
-          <FontAwesomeIcon icon={faMountain} />
-          <p>
-            Komańcza leży na granicy Bieszczad z Beskidem Niskim, co sprawia że
-            świetnie nadaje sie do spacerowania i podziwiania widoków.
-          </p>
+        <div>
+          <div className="attractionsItem">
+            <FontAwesomeIcon
+              icon={faMountain}
+              className="attractionsItemIcon"
+            />
+            <h3>Góry i szlaki</h3>
+            <p>
+              Komańcza znajduje sie na pograniczu Bieszczad i Beskidu Niskiego
+              co sprawia że w okolicy jest mnóstwo szlaków do zwiedzenia.
+            </p>
+          </div>
+          <div className="attractionsItem">
+            <FontAwesomeIcon
+              icon={faMonument}
+              className="attractionsItemIcon"
+            />
+            <h3>Zabytki</h3>
+            <p>
+              W Komańczy i okolicy można obejrzeć wiele ciekawych zabytków z,
+              których najważniejszym zdecydowanie bedzie klasztor sióstr
+              Nazaretanek w którym był przetrzymywany kardynał Stefan Wyszyński.
+            </p>
+          </div>
         </div>
-        <div className="attractionsItem">
-          <h3>Zabytki</h3>
-          <FontAwesomeIcon icon={faMonument} />
-          <p>
-            W Komańczy znajduje się sporo wartych uwagi zabytków, z których
-            najbardziej wyróżnia się Klasztor sióstr Nazaretanek w którym swego
-            czasu przebywał prymas polski Stefan Wyszyński.
-          </p>
-        </div>
-        <div className="attractionsItem">
-          <h3>Grillowanie</h3>
-          <FontAwesomeIcon icon={faFire} />
-          <p>
-            Na podwórzu naszych domków znajduje się palenisko na którym można
-            pogrillować.
-          </p>
-        </div>
-        <div className="attractionsItem">
-          <h3>Odpoczynek</h3>
-          <FontAwesomeIcon icon={faBed} />
-          <p>
-            Na naszych domkach można przede wszystkim odpocząć, a to
-            najważniejsze :)
-          </p>
+        <div>
+          <div className="attractionsItem">
+            <FontAwesomeIcon icon={faBed} className="attractionsItemIcon" />
+            <h3>Wypoczynek</h3>
+            <p>
+              Na naszych domkach można przede wszystkim odpocząć, a to przecież
+              jest głównym celem naszych gości.
+            </p>
+          </div>
+          <div className="attractionsItem">
+            <FontAwesomeIcon icon={faFire} className="attractionsItemIcon" />
+            <h3>Grillowanie</h3>
+            <p>
+              Na terenie naszych domków znajdują sie paleńiska dzięki, którym
+              można klimatycznie spędzić wieczór.
+            </p>
+          </div>
         </div>
       </div>
     </div>

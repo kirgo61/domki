@@ -4,7 +4,7 @@ const Slider = () => {
   return (
     <div>
       <SingleSlide />
-      {/* <div className="logo-wrapper">
+      <div className="logo-wrapper">
         <h2 className="logo-wrapper-text" style={{ textAlign: "left" }}>
           Domki
         </h2>
@@ -14,7 +14,7 @@ const Slider = () => {
         <h3 className="logo-wrapper-text" style={{ textAlign: "right" }}>
           Rzeczką
         </h3>
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -13,6 +13,7 @@
   font-size: 1.2rem;
   transition: 0.3s;
   margin: 0 auto;
+  margin-bottom: 1rem;
 }
 .offerTextButton:hover {
   background-color: rgb(240, 190, 97);
@@ -52,5 +53,84 @@
   height: 543px;
   box-shadow: 0px 2px 40px -2px rgba(0, 0, 0, 0.61);
   margin: 0 3rem;
-  background-size: contain;
+  object-fit: cover;
+}
+.offerItself {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 10vh;
+}
+.offerItselfInnerDiv {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+/* ////////////offerAbout//////////////// */
+.offerAbout {
+  display: flex;
+  justify-content: center;
+}
+.offerAboutInnerDiv {
+  padding: 2rem;
+  width: 30vw;
+}
+@media (max-width: 1024px) {
+  .offerItself {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+  .offerPhotos {
+    width: 80vw;
+    object-fit: cover;
+  }
+  .offerItselfInnerDiv {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .offerTextButton {
+    width: 25vw;
+    height: 4vh;
+
+    font-size: 2rem;
+  }
+  .offerAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .offerAboutInnerDiv {
+    padding: 2rem;
+    width: 80vw;
+  }
+  .offerText {
+    font-family: "Maitree";
+    font-size: 2rem;
+    margin: 16px 0;
+  }
+  .offerQuote {
+    font-family: "Caveat";
+    font-size: 2.5rem;
+    margin: 16px 0;
+  }
+}
+@media (max-width: 500px) {
+  .offerText {
+    font-size: 1rem;
+  }
+  .offerQuote {
+    font-size: 1.3rem;
+  }
+  .offerTextButton {
+    width: 50vw;
+    height: 10vh;
+  }
 }

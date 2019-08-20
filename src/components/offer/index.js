@@ -1,9 +1,10 @@
 import React from "react";
 import OfferTitle from "./OfferTitle";
 import OfferAbout from "./OfferAbout";
-import Paralax from "../utilities/Paralax";
 import OfferItself from "./OfferItself";
-import domek2 from "../utilities/domkiZdjecia1/komanczaKrajobraz.jpg";
+import domek2 from "../utilities/domkiZdjecia1/komanczaKrajobraz.JPG";
+import domek1 from "../utilities/domkiZdjecia1/komanczaKrajobraz2.JPG";
+import { Element } from "react-scroll";
 import { Parallax } from "react-scroll-parallax";
 import { ParallaxBanner } from "react-scroll-parallax";
 const Offer = () => {
@@ -11,16 +12,13 @@ const Offer = () => {
     <div>
       <OfferTitle titleProp="Witamy na naszej stronie!" />
       <OfferAbout />
+
       <Parallax className="parallax" y={[0, 0]}>
         <ParallaxBanner
           layers={[
             {
-              image: domek2,
-              amount: 0.3
-            },
-            {
-              image: domek2,
-              amount: 0.3
+              image: domek1,
+              amount: 0.5
             }
           ]}
           style={{
@@ -28,18 +26,16 @@ const Offer = () => {
           }}
         />
       </Parallax>
-      <OfferTitle titleProp="Nasza oferta" />
-      <OfferItself />
+      <Element name="Offer">
+        <OfferTitle titleProp="Nasza oferta" />
+        <OfferItself />
+      </Element>
       <Parallax className="parallax" y={[0, 0]}>
         <ParallaxBanner
           layers={[
             {
               image: domek2,
-              amount: 0.3
-            },
-            {
-              image: domek2,
-              amount: 0.3
+              amount: 0.5
             }
           ]}
           style={{

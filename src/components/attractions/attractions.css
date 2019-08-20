@@ -9,14 +9,14 @@
       rgba(201, 203, 163, 0.705),
       rgba(71, 45, 48, 0.705)
     ),
-    url("../utilities/domkiZdjecia1/komanczaKrajobraz3.jpg");
+    url("../utilities/domkiZdjecia1/komanczaKrajobraz3.JPG");
   background-size: cover;
   margin-bottom: 10vh;
 }
 .attractionsWrapper {
-  width: 70%;
-  height: 70%;
-  background-color: whitesmoke;
+  width: 70vw;
+  height: 70vh;
+  background-color: #fbceb5;
   box-shadow: 0px 2px 48px 15px rgba(0, 0, 0, 0.61);
   display: flex;
   justify-content: center;
@@ -29,14 +29,13 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 30%;
-  height: 60%;
-  margin: 0 10px;
-  padding: 20px 10px;
+  width: 25vw;
+  height: 25vh;
+  margin: 10px 10px;
 
-  box-shadow: -1px 2px 48px -20px rgba(0, 0, 0, 0.61);
-  background-color: white;
-  white-space: pre-line;
+  /* box-shadow: -1px 2px 48px -20px rgba(0, 0, 0, 0.61); */
+  /* background-color: white; */
+  /* white-space: pre-line; */
 }
 .attractionsItem h3 {
   font-family: "Lobster";
@@ -45,4 +44,19 @@
 .attractionsItem p {
   font-family: "Maitree";
   font-size: 0.9rem;
+}
+.attractionsItemIcon {
+  font-size: 2rem;
+}
+@media (max-width: 1024px) {
+  .attractionsWrapper {
+    flex-direction: column;
+  }
+  .attractionsItem {
+    width: 40vw;
+    height: 10vh;
+  }
+  .attractionsItem p {
+    display: none;
+  }
 }

@@ -1,0 +1,11 @@
+.drawerItself {
+  background-color: blanchedalmond;
+}
+.headerTitle {
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .headerTitle {
+    font-size: 1rem;
+  }
+}

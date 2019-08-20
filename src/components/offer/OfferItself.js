@@ -5,15 +5,7 @@ import Fade from "react-reveal";
 
 const OfferItself = () => {
   return (
-    <section
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        width: "100%",
-        // height: "70vh",
-        marginBottom: "10vh"
-      }}
-    >
+    <section className="offerItself">
       <Fade left>
         <img
           src={photoOffer1}
@@ -22,13 +14,7 @@ const OfferItself = () => {
           className="offerPhotos"
         />
       </Fade>
-      <div
-        style={{
-          width: "40vw",
-          display: "flex",
-          flexDirection: "column"
-        }}
-      >
+      <div className="offerItselfInnerDiv">
         <h3 className="offerTitleSmall"> Oferta</h3>
         <p className="offerText" style={{ textAlign: "center" }}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut illo
@@ -47,9 +33,6 @@ const OfferItself = () => {
           quod ratione voluptates voluptate, ut odio repudiandae eum eligendi ab
           rerum.
         </p>
-        <div style={{ textAlign: "center" }}>
-          <button className="offerTextButton">Galeria</button>
-        </div>
       </div>
       <Fade right>
         <img
