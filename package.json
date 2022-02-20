@@ -2,6 +2,9 @@
   "name": "domki",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "14.16.1"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.20",
     "@fortawesome/free-brands-svg-icons": "^5.10.0",
